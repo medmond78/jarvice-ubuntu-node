@@ -1,0 +1,25 @@
+{
+  "app": "jarvice_ubuntu_node",
+  "staging": false,
+  "checkedout": false,
+  "application": {
+    "command": "GUI",
+    "geometry": "1350x597",
+    "parameters": {
+      "command": "/usr/local/bin/nimbix_desktop"
+    }
+  },
+  "machine": {
+    "type": "n0",
+    "nodes": 1
+  },
+  "vault": {
+    "name": "drop.jarvice.com",
+    "force": false,
+    "readonly": false
+  },
+  "user": {
+    "username": "username",
+    "apikey": "apikey"
+  }
+}
