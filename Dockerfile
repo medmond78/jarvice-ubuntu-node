@@ -14,7 +14,10 @@ RUN apt-get -y update && \
         https://raw.githubusercontent.com/nimbix/image-common/$GIT_BRANCH/install-nimbix.sh \
         | bash -s -- --setup-nimbix-desktop --image-common-branch $GIT_BRANCH
 
-RUN apt-get -y install nodejs
+RUN apt-get -y install nodejs npm
+
+RUN npm install clui
+
 
 ADD help.html /etc/NAE/help.html
 ADD AppDef.json /etc/NAE/AppDef.json
