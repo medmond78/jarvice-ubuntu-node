@@ -14,6 +14,10 @@ RUN apt-get -y update && \
         https://raw.githubusercontent.com/nimbix/image-common/$GIT_BRANCH/install-nimbix.sh \
         | bash -s -- --setup-nimbix-desktop --image-common-branch $GIT_BRANCH
 
+RUN add-apt-repository -y ppa:chris-lea/node.js
+RUN apt-get update
+RUN apt-get -y install nodejs
+
 ADD help.html /etc/NAE/help.html
 ADD AppDef.json /etc/NAE/AppDef.json
 
