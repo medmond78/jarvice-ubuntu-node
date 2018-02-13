@@ -16,7 +16,7 @@ RUN apt-get -y update && \
 
 RUN apt-get -y install nodejs npm
 
-ADD package.json /tmp/package.json
+ADD package.json /home/nimbix/data/package.json
 #RUN cd /tmp && npm install
 #RUN mkdir -p /opt/app && cp -a /tmp/node_modules /opt/app/
 
