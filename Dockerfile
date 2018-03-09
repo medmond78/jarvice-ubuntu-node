@@ -15,6 +15,8 @@ RUN apt-get -y update && \
         | bash -s -- --setup-nimbix-desktop --image-common-branch $GIT_BRANCH
 
 RUN apt-get -y install nodejs npm
+RUN apt-get -y install qgis python-qgis qgis-plugin-grass
+
 
 ADD package.json /home/nimbix/data/package.json
 #RUN cd /tmp && npm install
